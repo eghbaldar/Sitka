@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CaspianTeam.com */
+/* Author : Alimohmmad Eghbaldar */
+body, div, p, h1, h2, h3, h4, ul, li, table{
+margin:0;
+padding:0;
+border:none;
+}
+body{
+padding:0px;
+background-image:url(../../../Content/Images/Managment/header_top.gif);
+background-repeat:repeat-x;
+}
+#body{
+margin: 5px auto 20px auto;
+width:970px;
+height:600px;/**/
+}
+#username{
+direction:rtl;
+width:350px;
+background-color:#FFF;
+margin-left:640px;
+height:26px;
+margin-top:38px;
+}
+#textUsername{
+position:absolute;
+margin-top:5px;
+font-family:Tahoma, Geneva, sans-serif;	font-size:11px;
+margin-right:7px;
+	top: 43px;
+	right: 112px;
+	height: 18px;
+	width: 274px;
+}
+
+#logo{
+margin-top:-69px;
+margin-left:620px;
+}
+#caspianteam{
+margin-top:-28px;
+}
+#mareqe{
+margin-left:-10px;
+margin-top:1px;
+/*		background-color:#FFF; */
+width:300px;
+height:26px;
+}
+#text_M{
+margin-left:-40px;
+}
+#menuBar{
+margin-right:-20px;
+margin-top:45px;
+direction:rtl;
+}
+#GuidMenuBar{
+font-family:Tahoma, Geneva, sans-serif;
+font-size:11px;
+position:absolute;
+margin-top:0px;
+margin-right:160px;
+}
+#TextGuid{
+font-family:11px;
+font-family:Tahoma, Geneva, sans-serif;
+font-weight:normal;
+margin-top:7px;
+margin-right:5px;
+position:absolute;
+}
+#version{
+	color:#999;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+	margin-top:-30px;
+}
+
+/*-------------------------------------------------------*/
+#center{
+margin-top:12px;
+direction:rtl;
+}
+#MenuRight{
+width:191px;
+height:500px;
+background-color:#cecece;
+margin-right:-20px;
+float:right;
+}
+
+#Menuleft{
+width:0px;
+float:right;
+}
+#IconCenter{
+float:right;
+width:630px;
+height:500px;
+background-color:#d8d8d8;
+}
+#Profile{
+	float:left;
+width:166px;
+height:500px;
+background-color:#cecece;
+}
+#BlueBlue{
+/*	width:100px; */
+}
+#amar_{
+position:absolute;
+margin-top:-300px;
+}
+#textAmar{
+margin-right:34px;
+font-family:Tahoma, Geneva, sans-serif;
+font-size:11px;
+color:#FFF;
+margin-top:-36px;
+}
+
+
+
+#menu{
+position:absolute;
+margin-top:-20px;
+margin-right:0PX;
+}
+#textMenu{
+margin-top:-15px;
+position:absolute;
+color:#FFF;
+margin-right:34px;
+font-family:Tahoma, Geneva, sans-serif;
+font-size:11px;
+}
+#M0{margin-top:-20px;}
+#ContentMenuRight{
+/*background-color:#096;*/
+width:190px;
+height:100%;
+}
+#M1{
+margin-right:10px;
+margin-top:-50px;
+}
+#textM1{
+font-family:Tahoma, Geneva, sans-serif;
+font-size:11px;
+color:#FFF;
+margin-right:7px;
+position:absolute;
+margin-top:5px;
+}
+#M2{
+margin-top:-45px;
+}
+#textM3{
+font-family:Tahoma, Geneva, sans-serif;
+font-size:11px;
+color:#FFF;
+margin-right:10px;
+position:absolute;
+margin-top:7px;
+}
+#ContentMenuCenter{
+/*background-color:#099;*/
+width:632px;
+height:100%;
+}
+#ContentMenuLeft{
+/*background-color:#096;*/
+width:165px;
+height:100%;
+}
+#IconCenterORG{
+	float:right;
+width:799px;
+height:500px;
+background-color:#d8d8d8;
+}
+#ContentMenuCenter2{
+/*background-color:#936;*/
+width:799px;
+height:100%;
+}

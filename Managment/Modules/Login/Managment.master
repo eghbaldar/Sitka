@@ -1,0 +1,295 @@
+﻿<%@ Master Language="VB" CodeFile="Managment.master.vb" Inherits="Managment_Managment" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title >کنترل پنل اخصاصی شرکت طراحان وب کاسپین </title>
+    <link href="../../../Content/CSS/Managment/css_FF.css" rel="stylesheet" type="text/css" />
+    <!--[if IE 6]> <link href="../../../content/CSS/Managment/css_6.css" rel="stylesheet" type="text/css" /> <![endif]-->
+    <link type="text/css" href="../../../Content/CSS/Menu/jquery.ui.all.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="../../../Content/JS/Menu/jquery-1.4.2.js"></script>
+
+    <script type="text/javascript" src="../../../Content/JS/Menu/jquery.ui.widget.js"></script>
+
+    <script type="text/javascript" src="../../../Content/JS/Menu/jquery.ui.accordion.js"></script>
+
+    <link type="text/css" href="../../../Content/CSS/Menu/demos.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+	$(function() {
+		$("#accordion").accordion({
+			event: "mouseover"
+		});
+	});
+	</script>
+
+    <script type="text/javascript">
+	function SetGuid(str)	{document.getElementById('TextGuid').innerHTML=str;	}
+    </script>
+
+    <!-- <script type="text/javascript" src="../Content/JS/Talk/jquery-1.js"></script> -->
+
+    <script type="text/javascript" src="../../../Content/JS/Talk/hovertip.js"></script>
+
+    <script type="text/javascript">
+			$(document).ready(function() { window.setTimeout(hovertipInit, 1);   });
+    </script>
+
+    <link href="../../../Content/CSS/Talk/css.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style1
+        {
+            width: 81%;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <div id="body">
+        <div id="header">
+            <div id="username">
+                <span id="textUsername">نام کاربری : alimohammad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    تاریخ : 89/12/1</span>
+            </div>
+            <div id="logo">
+                <img src="../../../Content/Images/Managment/logo.gif" /></div>
+            <div id="caspianteam">
+                <img src="../../../Content/Images/Managment/caspianteam.gif" /></div>
+            <div id="mareqe">
+                <div id="text_M">
+                    <marquee style="width: 112%" onmouseover="this.stop()" onmouseout="this.start()"
+                        scrollamount="1" scrolldelay="80" direction="down" height="24">
+                         <P style="MARGIN: 5px" align=center>
+                         <SPAN style="FONT-SIZE: 8pt">
+                         <BR />
+                         <BLOGLINKS />
+                         <BR />
+            		 	<A class="links" href="http://www.CaspianTeam.com" target="_blank" style="text-decoration:none;"><SPAN style="COLOR:#000;font-family:Tahoma, Geneva, sans-serif;text-decoration:none;font-size:11px;">www.CaspianTeam.com  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  سیستم مدیریت محتوی کاسپین </SPAN></A>
+         				<BR />
+         				<BR />                        
+                        <SPAN style="COLOR: #ff9966"></SPAN>                         
+            		 	<A class="links" href="http:/www.forum.CaspianTeam.com" target="_blank" style="text-decoration:none;"><SPAN style="COLOR:#000;font-family:Tahoma, Geneva, sans-serif;text-decoration:none;font-size:11px;">www.forum.CaspianTeam.com  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  مشکلات و سوالات خود </SPAN></A>
+         				<BR />
+         				<BR />                        
+                        <SPAN style="COLOR: #ff9966"></SPAN>
+		 				<A class="links" href="http://www.Suport.CaspianTeam.com" target="_blank" style="text-decoration:none;"><SPAN style="COLOR:#000;font-family:Tahoma, Geneva, sans-serif;text-decoration:none;font-size:11px;">www.Suport.CaspianTeam.com  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ارتباط با واحد پشتیبان  </SPAN></A>
+                        <SPAN style="COLOR: #ff9966"> 
+         				<BR />
+         				<BR />                        
+         				</SPAN>
+         				</SPAN>
+         				</P>
+		 				</marquee>
+                </div>
+            </div>
+            <div id="menuBar">
+                <a href="#" onmousemove="return SetGuid('رفتن به صفحه اصلی سایت');" onmouseout="return SetGuid(' ');">
+                    <img src="../../../Content/Images/Managment/home.gif" border="0" /></a> <a href="#"
+                        onmousemove="return SetGuid('صندوق پیام ها');" onmouseout="return SetGuid(' ');">
+                        <img src="../../../Content/Images/Managment/message.gif" border="0" /></a>
+                <a href="http://www.CaspianTeam.com" target="_blank" onmousemove="return SetGuid('طراحان وب کاسپین');" onmouseout="return SetGuid(' ');">
+                    <img src="../../../Content/Images/Managment/caspian.gif" border="0" /></a> <a href="#"
+                        onmousemove="return SetGuid('خروج از کنترل پنل');" onmouseout="return SetGuid(' ');">
+                        <img src="../../../Content/Images/Managment/exit.gif" border="0" /></a>
+                <div id="GuidMenuBar">
+                    <div id="TextGuid">
+                    </div>
+                    <img src="../../../Content/Images/Managment/Place1.gif" border="0" />
+                </div>
+            </div>
+            <div id="version">
+                <a href="http://www.caspianteam.com" style="text-decoration: none; color: #FFF;"
+                    target="_blank">نسخه دوم مدیریت محتوی سیتکا </a>
+            </div>
+        </div>
+        <div id="center">
+            <div id="MenuRight">
+                <img src="../../../Content/Images/Managment/Gray.gif" />
+                <div id="M0">
+                    <img src="../../../Content/Images/Managment/menu.gif" id="menu" />
+                    <span id="textMenu">دسترسی سریع | Quick Access</span>
+                </div>
+                <div id="ContentMenuRight">
+                    <div class="demo">
+                        <div id="accordion">
+                            <h3>
+                                <a href="../../Default.aspx">صفحه اصلی کنترل پنل</a></h3>
+                            <div>
+                            </div>
+                            <h3>
+                                <a href="#">مدیریت مقالات</a></h3>
+                            <div>
+                                <div class="accordion_div">
+                                    <ul class="accordion_list">
+                                        <li>نمایش مقالات</li>
+                                        <li>اضافه کردن مقاله</li>
+                                        <li>ویرایش مقالات</li>
+                                        <li>گروهبندی مقالات</li>
+                                        <li>نظرات</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3>
+                                <a href="#">مدیریت درباره ما</a></h3>
+                            <div>
+                                <div class="accordion_div">
+                                    <ul class="accordion_list">
+                                        <li>ویرایش درباره ما</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3>
+                                <a href="#">مدیریت تماس با ما</a></h3>
+                            <div>
+                                <div class="accordion_div">
+                                    <ul class="accordion_list">
+                                        <li>مشاهده پیام ها</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3>
+                                <a href="#">مدیریت پست الکترونیکی</a></h3>
+                            <div>
+                                <div class="accordion_div">
+                                    <ul class="accordion_list">
+                                        <li>نمایش </li>
+                                        <li>اضافه کردن </li>
+                                        <li>ویرایش </li>
+                                        <li>گروهبندی </li>
+                                        <li>تنظیمات SMTP</li>
+                                        <li>ارسال نامه الکترونیکی</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3>
+                                <a href="#">مدیریت فایل ها</a></h3>
+                            <div>
+                                <div class="accordion_div">
+                                    <ul class="accordion_list">
+                                        <li>مدیریت فایل ها</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3>
+                                <a href="#">مدیریت گالری تصاویر</a></h3>
+                            <div>
+                                <div class="accordion_div">
+                                    <ul class="accordion_list">
+                                        <li>نمایش گالری تصاویر</li>
+                                        <li>اضافه کردن عکس</li>
+                                        <li>ویرایش </li>
+                                        <li>مدیریت آلبوم ها</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3>
+                                <a href="#">مدیریت پیوند ها</a></h3>
+                            <div>
+                                <div class="accordion_div">
+                                    <ul class="accordion_list">
+                                        <li>نمایش پیوند ها </li>
+                                        <li>اضافه کردن پیوند</li>
+                                        <li>ویرایش پیوند ها</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3>
+                                <a href="#">مدیریت محدود کردن IP</a></h3>
+                            <div>
+                                <div class="accordion_div">
+                                    <ul class="accordion_list">
+                                        <li>نمایش </li>
+                                        <li>اضافه کردن </li>
+                                        <li>ویرایش </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3>
+                                <a href="#">مدیریت کالا ها</a></h3>
+                            <div>
+                                <div class="accordion_div">
+                                    <ul class="accordion_list">
+                                        <li>نمایش </li>
+                                        <li>اضافه کردن کالا</li>
+                                        <li>ویرایش کالا</li>
+                                        <li>گروهبندی کالا ها</li>
+                                        <li>نظرات</li>
+                                        <li>امتیازات</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3>
+                                <a href="#">مدیریت کاربران</a></h3>
+                            <div>
+                                <div class="accordion_div">
+                                    <ul class="accordion_list">
+                                        <li>مدیریت کاربران</li>
+                                        <li>ایجاد کاربر </li>
+                                        <li>حق دسترسی کاربران</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3>
+                                <a href="#">مدیریت فیلم ها</a></h3>
+                            <div>
+                                <div class="accordion_div">
+                                    <ul class="accordion_list">
+                                        <li>نمایش فیلم ها </li>
+                                        <li>اضافه کردن فیلم</li>
+                                        <li>ویرایش فیلم ها</li>
+                                        <li>گروهبندی فیلم ها</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3>
+                                <a href="#">مدیریت اخبار</a></h3>
+                            <div>
+                                <div class="accordion_div">
+                                    <ul class="accordion_list">
+                                        <li>نمایش </li>
+                                        <li>اضافه کردن خبر</li>
+                                        <li>ویرایش خبر ها</li>
+                                        <li>گروهبندی خبر ها</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3>
+                                <a href="#">مدیریت صفحه خارج از دسترس</a></h3>
+                            <div>
+                                <div class="accordion_div">
+                                    <ul class="accordion_list">
+                                        <li>ویرایش صفحه </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Menuleft">
+                <div id="IconCenterORG">
+                    <img src="../../../Content/Images/Managment/Blue2.gif" id="BlueBlue" />
+                    <div id="M1">
+                        <img src="../../../Content/Images/Managment/Global.gif" id="Global" />
+                        <span id="textM1">بخش مدیریت کاربران سایت</span>
+                    </div>
+                    <div id="ContentMenuCenter2">
+                        <form id="form1" runat="server">
+                        <div>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
